@@ -1,0 +1,100 @@
+:root{
+    --color-background: black;
+    --color-bg-secondary: #1f1f1f;
+    --color-text: white;
+    --color-subline: #505050;
+    --color-primary: #0a84ff;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.6;
+    margin:0 auto;
+    margin:0 1em;
+    box-sizing:border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 0px 1em;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+a{
+    color: var(--color-text);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.links{
+    padding: 0 1em;
+}
+
+.navbar .blogs{
+    color: var(--color-primary);
+}
+
+.links:hover{
+    color: var(--color-subline);
+}
+
+.main {
+    padding: 0;
+    margin:4%
+}
+
+.blogHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 00.6em;
+}
+
+.title{
+    float: center;
+    margin-top: 0;
+}
+
+.mark{
+    float:right;
+    margin-top: 0;
+    color: var(--color-primary);
+}
+
+.blogSection{
+    width: 70%;
+    cursor: pointer;
+    background-color: var(--color-bg-secondary);
+    margin: 40px auto;
+    padding: 0.7rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.blogSection:hover{
+    transform: scale(1.05);
+}
+
+.description{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.blogLink a{
+    color: var(--color-primary);
+}
